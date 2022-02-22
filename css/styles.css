@@ -1,3 +1,7 @@
+/* GLOBAL IMPORT FONT FAMLIY  LINK START  */
+@import url("https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap");
+
+
 /* CUSTOM PROPS CSS START  */
 :root {
     --primary-color: #000;
@@ -18,7 +22,7 @@
 }
 
 *:focus {
-    outline: 2px dashed #000;
+    outline: 2px dashed #145c5c;
     outline-offset: 3px;
 }
 
@@ -32,13 +36,16 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: var(--primary-color);
+    background-image: url("../images/pingPong-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center left;
     padding: 0;
     margin: 0;
-    font-family: "Arial", sans-serif;
+    font-family: 'Pontano Sans', "Arial", sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: var(--text-color);
+    color: var(--primary-color);
 }
 
 img {
@@ -63,7 +70,7 @@ img {
 /* CONTAINER CSS START  */
 .container {
      width: 100%;
-     max-width: 1200px;
+     max-width: 1000px;
      margin-left: auto;
      margin-right: auto;
      padding-left: 50px;
@@ -73,4 +80,89 @@ img {
 /* SAIT MAIN CSS START  */
 .site-main {
     flex-grow: 1;
+}
+
+/* PING PONG CSS START  */
+
+.card {
+    width: 100%;
+    max-width: 350px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 3px #eee;
+}
+
+/* CARD HEAD CSS START  */
+.card-head__card-img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 350px;
+    height: 250px;
+}
+
+/* CARD BODY CSS START  */
+.card__card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+
+.card-body__card-score {
+    margin-top: 0;
+    margin: 5px;
+}
+
+.form_select {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.form__btn-wrapper {
+    margin-bottom: 25px;
+}
+
+.btn-wrapper__player-btn {
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.btn-player1 {
+    background-color: #638f22;
+    margin-right: 15px;
+}
+
+.btn-player2 {
+    background-color: #0e7575;
+}
+
+.btn-reset {
+    background-color: #4C0027;
+}
+
+.card-body__card-cta-wrapper {
+    margin: 0;
+    padding: 0;
+    color: #df1515;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.card-body__card-cta-wrapper:not(:last-child) {
+    margin-right: 25px;
+}
+.fa-brands {
+    font-size: 20px;
+    color: red;
 }
